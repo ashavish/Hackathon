@@ -21,7 +21,7 @@ Basic preprocessing of making words lower case and removing punctuations has bee
 
 Note: Topic Columns indicates the indicator columns for Computer Science, Mathematics, Physics and Statistics
 
-| Approach      | Validation F1-Score |
+| Approach      | Validation Micro F1-Score |
 | ----------- | ----------- |
 | Count Vectorizer + OneVsRestClassifier + Logistic Regression     | 0.62       |
 | TFIDF Vectorizer + OneVsRestClassifier + Logistic Regression   | 0.68        |
