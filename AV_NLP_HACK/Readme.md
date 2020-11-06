@@ -17,7 +17,7 @@ The evaluation metric is micro F1 score.
 
 A summary of different approaches tried for this problem is presented below along with the Micro F1 score on the validation set.
 
-Basic preprocessing of making words lower case and removing punctuations has been done. Further preprocessing can yield better results.
+Basic preprocessing of making words lower case and removing punctuations has been done. Further preprocessing can yield better results. Finetuning parameters of the final chosen model can also give a boost.
 
 Note: Topic Columns indicates the indicator columns for Computer Science, Mathematics, Physics and Statistics
 
@@ -28,3 +28,11 @@ Note: Topic Columns indicates the indicator columns for Computer Science, Mathem
 | TFIDF Vectorizer With Topic Columns  + OneVsRestClassifier + Logistic Regression   | 0.76        |
 | NBSVM with TFIDF Features   | 0.67        |
 | NBSVM with TFIDF Features with Topic Columns   |   0.75      |
+| Averaged Glove Word Embeddings(100d) + OneVsRestClassifier + Logistic Regression  |   0.55      |
+| Universal Sentence Embedding using Keras  |   0.64     |
+| Universal Sentence Embedding using Keras with Topic Columns  |   0.72     |
+| Fast Text Classifier  |   0.65     |
+| BERT Finetuned No Freeze |  0.71      |
+| BERT Finetuned No Freeze with Topic Columns |  0.715      |
+| Sentence Transformers (bert-base-nli-mean-tokens) |   0.62    |
+| Sentence Transformers with Topic Columns (bert-base-nli-mean-tokens) | 0.70       |
